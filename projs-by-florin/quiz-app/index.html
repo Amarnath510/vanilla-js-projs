@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Quiz</h1>
+  </header>
+  <main>
+    <form onsubmit="submitFn(); event.preventDefault()" class="quiz__form">
+      <fieldset>
+        <legend id='question'>Question-1</legend>
+        <ul>
+          <li>
+            <input type="radio" name="q1" id="a">
+            <label for="a" id="option-a">A</label>
+          </li>
+          <li>
+            <input type="radio" name="q1" id="b">
+            <label for="b" id="option-b">B</label>
+          </li>
+          <li>
+            <input type="radio" name="q1" id="c">
+            <label for="c" id="option-c">C</label>
+          </li>
+          <li>
+            <input type="radio" name="q1" id="d">
+            <label for="d" id="option-d">D</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit">Submit &RightArrow;</button>
+    </form>
+  </main>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
